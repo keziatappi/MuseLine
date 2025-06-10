@@ -14,7 +14,7 @@ Beberapa masalah yang menjadi latar belakang pengembangan MuseLine:
 
 ### Solution
 MuseLine mengatasi masalah-masalah tersebut melalui pendekatan berikut:
-1. Integrasi Layanan: Menggabungkan pencarian lagu (melalui Last.fm API) dan lirik (melalui lyrics.ovh API) dalam satu aplikasi yang mulus.
+1. Integrasi Layanan: Menggabungkan pencarian lagu (melalui Last.fm API) dan lirik (melalui web azlyric awalnya saya menggunakan lyrics.ovh API tetapi down) dalam satu aplikasi yang mulus.
 2. Dukungan Mode Offline:
    - Menyimpan lagu favorit secara lokal
    - Indikator status offline yang jelas
@@ -36,7 +36,7 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 
 ## Features
 1. Pencarian Lagu: Mencari lagu menggunakan API Last.fm
-2. Tampilan Lirik: Menampilkan lirik lagu menggunakan API
+2. Tampilan Lirik: Menampilkan lirik lagu menggunakan web azlyric
 3. Fitur Auto-scroll Lirik: Fitur scroll otomatis yang nyaman saat membaca lirik
 4. Manajemen Favorit: Simpan dan kelola lagu favorit
 5. Riwayat Pencarian: Melacak riwayat pencarian untuk akses cepat
@@ -45,14 +45,18 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 
 ## Screenshots
 ### Home Page
-
+![WhatsApp Image 2025-06-10 at 22 06 51_99e68262](https://github.com/user-attachments/assets/367968b2-d418-414a-bc05-cabffa527a28)
 ### Search Page
-![WhatsApp Image 2025-06-10 at 21 31 18_7ee9fb48](https://github.com/user-attachments/assets/564a47c4-c997-411c-916a-bab96a3c79a5)
+![WhatsApp Image 2025-06-10 at 22 06 51_d950677d](https://github.com/user-attachments/assets/e54c2517-1ccc-44c2-8916-0db95669836b)
 ### Detail Lyrics
+![WhatsApp Image 2025-06-10 at 22 56 47_ad5dfbe1](https://github.com/user-attachments/assets/c8bffc09-6617-4cec-9ac1-2ff7a8dcaadd)
 ### Favorite Page
-![WhatsApp Image 2025-06-10 at 21 31 18_35581872](https://github.com/user-attachments/assets/aab4fd11-204e-43ef-b11b-8bcb54e24891)
+![WhatsApp Image 2025-06-10 at 22 06 52_b31cf7a0](https://github.com/user-attachments/assets/0ed43e4c-4ab0-4989-b715-a885bcc0666f)
+### Offline Mode
+![WhatsApp Image 2025-06-10 at 22 56 46_8c49a5d2](https://github.com/user-attachments/assets/8a5db525-16e5-4b3e-b1ed-7ae2cf42d5bb)
 ### Light Mode
-![WhatsApp Image 2025-06-10 at 21 36 30_ccaa22b9](https://github.com/user-attachments/assets/4e2cf952-ef5b-45c2-850f-af99bb312312)
+![WhatsApp Image 2025-06-10 at 22 06 51_8c55940f](https://github.com/user-attachments/assets/9460c328-f670-440a-be57-78348fb64013)
+
 
 ## Technical Implementation
 ### Arsitektur Aplikasi
