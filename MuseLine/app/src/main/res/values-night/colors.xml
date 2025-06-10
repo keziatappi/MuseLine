@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#1D1E23</color>
+    <color name="border">#35373B</color>
+    <color name="backgroundTextField">#13D9D9D9</color>
+    <color name="hint">#9FA1A5</color>
+    <color name="iconSearch">#FFFFFF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_subtitle">#9FA1A5</color>
+    <color name="favorite">#F3B816</color>
+    <color name="borderBottomNav">#35373B</color>
+    <color name="borderBottomNavContainer">#35373B</color>
+</resources>
