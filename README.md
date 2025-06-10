@@ -45,7 +45,7 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 
 ## Screenshots
 ### Home Page
-![WhatsApp Image 2025-06-10 at 21 31 18_e8c46dd2](https://github.com/user-attachments/assets/323f8073-2833-426f-9e4e-746c42b15689)
+
 ### Search Page
 ![WhatsApp Image 2025-06-10 at 21 31 18_7ee9fb48](https://github.com/user-attachments/assets/564a47c4-c997-411c-916a-bab96a3c79a5)
 ### Detail Lyrics
@@ -53,3 +53,10 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 ![WhatsApp Image 2025-06-10 at 21 31 18_35581872](https://github.com/user-attachments/assets/aab4fd11-204e-43ef-b11b-8bcb54e24891)
 ### Light Mode
 ![WhatsApp Image 2025-06-10 at 21 36 30_ccaa22b9](https://github.com/user-attachments/assets/4e2cf952-ef5b-45c2-850f-af99bb312312)
+
+## Technical Implementation
+### Arsitektur Aplikasi
+Aplikasi menggunakan arsitektur Model-View-Controller (MVC) dengan komponen berikut:
+1. Model: Kelas data dalam paket com.example.museline.data.model
+2. View: Layout XML di res/layout dan kelas Fragment/Activity
+3. Controller: Logic aplikasi dalam Activity dan Fragment
