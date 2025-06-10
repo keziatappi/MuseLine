@@ -1,7 +1,7 @@
-# MuseLine
+# 🎼MuseLine
 MuseLine adalah aplikasi Android yang memungkinkan pengguna mencari lagu, menampilkan lirik, dan menyimpan lagu favorit mereka. Aplikasi ini menyediakan antarmuka yang ramah pengguna dengan kemampuan pengalihan tema dan dukungan mode offline.
 
-## About Project
+## 🎯About Project
 MuseLine adalah aplikasi Android yang dikembangkan untuk memudahkan penikmat musik dalam mengakses lirik lagu favorit mereka. Aplikasi ini lahir dari kebutuhan akan platform sederhana namun komprehensif yang menggabungkan pencarian lagu, akses lirik, dan manajemen koleksi musik dalam satu tempat. MuseLine dirancang dengan fokus pada pengalaman pengguna yang lancar, kemudahan akses informasi musik, dan fungsionalitas offline untuk mendukung penggunaan dalam berbagai kondisi jaringan.
 
 ### Problem Statement
@@ -34,7 +34,7 @@ MuseLine mengatasi masalah-masalah tersebut melalui pendekatan berikut:
 
 Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik yang ingin mengakses dan mengelola lirik lagu favorit mereka dengan cara yang lebih efisien dan menyenangkan, bahkan dalam kondisi konektivitas terbatas.
 
-## Features
+## ✨Features
 1. Pencarian Lagu: Mencari lagu menggunakan API Last.fm
 2. Tampilan Lirik: Menampilkan lirik lagu menggunakan web azlyric
 3. Fitur Auto-scroll Lirik: Fitur scroll otomatis yang nyaman saat membaca lirik
@@ -43,7 +43,7 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 6. Tema Gelap/Terang: Beralih antara tema gelap dan terang
 7. Dukungan Mode Offline: Fungsionalitas dasar saat offline dengan indikator yang sesuai
 
-## Screenshots
+## 📷Screenshots
 ### Home Page
 ![WhatsApp Image 2025-06-10 at 22 06 51_99e68262](https://github.com/user-attachments/assets/367968b2-d418-414a-bc05-cabffa527a28)
 ### Search Page
@@ -58,9 +58,67 @@ Dengan pendekatan ini, MuseLine menyediakan solusi terpadu untuk penggemar musik
 ![WhatsApp Image 2025-06-10 at 22 06 51_8c55940f](https://github.com/user-attachments/assets/9460c328-f670-440a-be57-78348fb64013)
 
 
-## Technical Implementation
+## 🛠️🛠Technical Implementation
 ### Arsitektur Aplikasi
-Aplikasi menggunakan arsitektur Model-View-Controller (MVC) dengan komponen berikut:
-1. Model: Kelas data dalam paket com.example.museline.data.model
-2. View: Layout XML di res/layout dan kelas Fragment/Activity
-3. Controller: Logic aplikasi dalam Activity dan Fragment
+Aplikasi ini mengikuti arsitektur Android standar dengan komponen terpisah untuk:
+1. UI (Activities dan Fragments)
+   - MainActivity: Kontainer utama dengan navigasi
+   - HomeFragment: Menampilkan lagu-lagu teratas
+   - SearchFragment: Menangani pencarian lagu
+   - FavoriteFragment: Menampilkan lagu favorit
+   - LyricActivity: Menampilkan lirik lagu dengan fitur gulir otomatis
+2. Data (Models dan Database)
+   - DatabaseHelper: Pengelola database SQLite
+   - Model Data :
+     - Track: Merepresentasikan sebuah lagu
+     - FavoriteTrack: Merepresentasikan lagu favorit
+     - TrackHistory: Merepresentasikan riwayat pencarian
+4. Network (API Services)
+   - ApiClient: Klien untuk panggilan API
+   - LastFmService: Antarmuka untuk API Last.fm
+   - LyricsService: Antarmuka untuk API lirik
+5. Api :
+   - API Last.fm: Digunakan untuk mengambil trek teratas dan mencari lagu
+   - API Lirik Kustom: Digunakan untuk mengambil lirik lagu
+     
+## 💡Cara Penggunaan Aplikasi
+### Layar Utama
+1. Lihat daftar lagu-lagu teratas
+2. Ketuk lagu untuk melihat liriknya
+3. Klik ikon hati untuk menambah/menghapus lagu dari favorit
+4. Gunakan bilah pencarian di bagian atas untuk mencari lagu tertentu
+
+### Layar Pencarian
+1. Masukkan nama lagu atau artis di kolom pencarian
+2. Lagu yang baru saja dicari akan muncul ketika tidak ada pencarian aktif
+3. Ketuk hasil pencarian untuk melihat lirik
+
+### Layar Favorit
+1. Akses semua lagu favorit yang telah Anda simpan
+2. Ketuk lagu untuk melihat liriknya
+3. Hapus lagu dari favorit dengan mengetuk ikon hati
+
+### Layar Lirik
+1. Lihat lirik lengkap dari lagu yang dipilih
+2. Gunakan tombol "Gulir Otomatis" untuk secara otomatis menggulir lirik
+3. Ketuk tombol kembali untuk kembali ke layar sebelumnya
+
+### Pengalih Tema
+Beralih antara tema terang dan gelap menggunakan sakelar di bilah navigasi bawah
+
+## 📚Cara Memulai
+### Syarat
+- Android Studio 
+- JDK 8
+- Perangkat fisik atau emulator Android
+- Koneksi internet (opsional untuk mode offline)
+### Instalasi
+1. git clone:
+   https://github.com/keziatappi/MuseLine.git
+2. Buka project di Android Studio
+3. Sync Gradle
+4. Jalankan aplikasi
+### Konfigurasi
+1. Jika menggunakan API key, pastikan sudah dimasukkan di NetworkUtils.java
+2. Sesuaikan endpoint API sesuai kebutuhan
+   
